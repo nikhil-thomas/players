@@ -1,0 +1,115 @@
+*{
+	margin:0;
+	padding-bottom:0;
+	margin 0 auto
+}
+body{
+	background-image:url(pic.jfif);
+	background-position:center;
+	background-size:cover;
+	font-family:sans-serif;
+	margin-top:40px;
+}
+
+
+.addPlayer{
+	width:800px;
+	background-color:rgb(0,0,0,0.6);
+	margin: auto;
+	color:#FFFFFF;
+	padding:10px 0px 10px 0px;
+	text-align:center;
+	border-radius:15px 15px 0px 0px;
+}
+
+.main{
+	background-color: rgb(0,0,0,0.4);
+	width:800px;
+	height: 450px;
+	margin:auto;
+	color:#000000;
+
+}
+
+form{
+	padding:18px;
+}
+
+#name{
+	color:#FFFFFF;
+	border-radius: 8px;
+    height: 28px;
+}
+
+.lastname{
+	border-radius:8px;
+	height:80%;
+	
+}
+
+.firstname{
+	border-radius:8px;
+	height:80%;
+	margin-bottom: 20px;
+	margin-top:20px;
+}
+
+.age{
+	border-radius:8px;
+	height:80%;
+}
+
+.position{
+	border-radius:8px;
+	height:85%;
+	width:84%;
+}
+
+.goals{
+	border-radius:8px;
+	height:80%;
+	margin-top:29px;
+	width: 178px;
+}
+
+.assists{
+	border-radius:8px;
+	height:80%;
+	width: 168px;
+}
+
+.saves{
+	border-radius:8px;
+	height:80%;
+	margin-bottom: 20px;
+	width: 197px;
+}
+
+.cleansheet{
+	border-radius:8px;
+	height:80%;
+}
+
+.matches{
+	border-radius:8px;
+	height:80%;
+}
+
+.salary{
+	border-radius:8px;
+	height:80%;
+	margin-top: 18px;
+}
+
+.price{
+	border-radius:8px;
+	height:80%;
+	margin-top:20px;
+	margin-left:2%;
+}
+
+
+.class{
+	text-align: center;
+	margin 0 AUTO;
+}
