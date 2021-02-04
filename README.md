@@ -22,4 +22,4 @@
 
 1. To stop all containers
 
-- `docker-compose down
+- `docker-compose down'
