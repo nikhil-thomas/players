@@ -1,0 +1,31 @@
+version: "3.9"
+services:
+  myapp:
+    build:
+      context: ./backend
+    ports:
+    - "5000:5000"
+    # defines startup order
+    depends_on:
+      - database
+    environment:
+      ATLAS_URI: mongodb://database:27017/playerManagement?readPreference=primary&appname=MongoDB%20Compass&ssl=false
+    restart: always
+    # connect to myapp-network
+    networks:
+    - myapp-network
+  database:
+    image: "mongo:4.2.12-bionic"
+    ports:
+    - "27017:27017"
+    volumes: 
+    - ~/mongo/data:/data/db
+    # conneect this containers also to myapp-network
+    networks:
+    - myapp-network
+# define a docker internal network where the containers will be connected
+# the `links` approach is deprecated
+# docker compoase will create and delete this network
+# to see network being listed, while docoker-compose is running, from an different terminal run `docker network ls`
+networks:
+  myapp-network:
